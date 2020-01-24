@@ -4,6 +4,7 @@ import { Link} from "gatsby"
 import {useSliderquery} from "../staticqueryslider"
 import arrowLeft from "../../images/arrow_next.png"
 // import 'swiper/css/swiper.min.css'
+import Img from "gatsby-image"
 import "../layout.scss"
 
 
@@ -64,10 +65,11 @@ export default () => {
           
         >
           <div className="img">
-            <img
-              src={ar.node.acf.imgDescriptPost.source_url}
+            <Img
+              fluid={ar.node.acf.imgDescriptPost.localFile.childImageSharp.fluid}
+              // src={ar.node.acf.imgDescriptPost.source_url}
               alt={ar.node.acf.imgDescriptPost.title}
-              loading="lazy"
+              // loading="lazy"
             />
           </div>
           <div className="swiper_slide_text flex flex-column">
@@ -83,7 +85,7 @@ export default () => {
             <div className="flex link_container">
               <div className="arrow_next">
                 <img
-                  loading="lazy"
+                  loading="auto"
                   src={arrowLeft}
                   alt='5'
                 />

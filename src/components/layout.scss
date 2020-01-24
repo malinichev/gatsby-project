@@ -1018,6 +1018,9 @@ h3.catalog_items_letter {
 }
 
 .catalog .catalog_item:hover .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: #80c2b8;

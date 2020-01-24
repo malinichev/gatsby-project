@@ -27,7 +27,9 @@ const MyPlacemark = () => (
             width: "100%",
             border: "0"
           }}
-         src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A2a906af06473046ac950b80e825b09c8986b2aa01a4ffcf793a5c43d2e324497&amp;width=600&amp;height=178&amp;lang=ru_RU" alt="map" />
+         src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A2a906af06473046ac950b80e825b09c8986b2aa01a4ffcf793a5c43d2e324497&amp;width=600&amp;height=178&amp;lang=ru_RU" alt="map" 
+         loading="lazy"
+         />
     </a>
 </>
 );

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'gatsby'
-
+const uuidInNewsPageNewsCatalog = require('uuid/v4');
 const InNewsPageNewsCatalog = ({myPost})=> {
  
     return (
@@ -33,12 +33,13 @@ const InNewsPageNewsCatalog = ({myPost})=> {
         po.node.categories.sort(compareSlug);
     
         return(
-          <>
+         
                     <div
                       style={{
                         width: "30%",
                         marginBottom: "2em"
                       }}
+                      key={uuidInNewsPageNewsCatalog()}
                     >
                       <div className="post-thumb">
                         <img
@@ -52,7 +53,7 @@ const InNewsPageNewsCatalog = ({myPost})=> {
                           <span className="date">{po.node.date}</span>
                           <h2>{po.node.title}</h2>
                           <p />
-                          <p className>
+                          <p >
                           
                           {po.node.descriptPost}
                           </p>
@@ -66,7 +67,7 @@ const InNewsPageNewsCatalog = ({myPost})=> {
                               alt={5}
                             />
                           </div>
-                          <div className>
+                          <div >
                           <Link 
                            
                             key={po.node.id} 
@@ -85,7 +86,7 @@ const InNewsPageNewsCatalog = ({myPost})=> {
           
                    
           
-      </>
+   
            
             )
           

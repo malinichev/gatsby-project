@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'gatsby'
+
 const NewsPageBradcrumb =({cat, location})=>{
   
     return (
@@ -16,7 +17,9 @@ const NewsPageBradcrumb =({cat, location})=>{
                     if(`${p.node.path}` == `${location.pathname}` || `${p.node.path}` == "/category/news/" ){
                     
                       return (
-                        <h2 style={{
+                        <h2 
+                        key={p.node.id} 
+                        style={{
                           margin: "0 0.3em 0 0"
                         }}> 
                               <Link 
@@ -24,7 +27,7 @@ const NewsPageBradcrumb =({cat, location})=>{
                             style={{
                               color:'#4c4c4d'
                             }}
-                            key={p.node.id} 
+                            
                             
                           
                             >

@@ -18,7 +18,7 @@ return (
             Поиск:{" "}
           </label>
           <input type="text" 
-          defaultValue 
+           
           placeholder="Введи название товара" 
           name="s" 
           id="s"

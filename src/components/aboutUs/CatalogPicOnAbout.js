@@ -1,6 +1,7 @@
 import React from "react";
 import bxplus from "../../images/bx-plus.png";
 import {Link} from "gatsby"
+import Img from "gatsby-image"
 
 const CatalogPicOnAbout = ({categListPath}) => {
   // let result = str.match(/Java(Script)/g);
@@ -26,9 +27,21 @@ const CatalogPicOnAbout = ({categListPath}) => {
                     <div
                       className="catalog_item"
                       style={{
-                        background: `url(${el.node.acf.categoryPic.source_url})`
+                        position:"relative"
+                        // background: `url(${el.node.acf.categoryPic.source_url})`
                       }}
                     >
+                      <Img 
+                      style={{
+                        position:"absolute",
+                        width:"100%",
+                        height:"100%",
+                        top:"0",
+                        left:"0"
+                        // background: `url(${el.node.acf.categoryPic.source_url})`
+                      }}
+                      fluid={el.node.acf.categoryPic.localFile.childImageSharp.fluid}/>
+                      />
                       <div className="img-overlay">
                         <div className="overlay_button">
                           <img

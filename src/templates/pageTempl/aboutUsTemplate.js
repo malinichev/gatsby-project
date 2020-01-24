@@ -80,6 +80,14 @@ export const query = graphql`
               alt_text
               source_url
               id
+              localFile {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                    
+                  }
+                }
+              }
             }
           }
         }

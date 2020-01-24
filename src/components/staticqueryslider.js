@@ -47,6 +47,13 @@ export const useSliderquery = () => {
                 imgDescriptPost {
                   source_url
                   title
+                  localFile {
+                    childImageSharp {
+                      fluid{
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
                 }
               }
               date(formatString: "DD.MM.YYYY")

@@ -3,6 +3,7 @@ import React from "react"
 // import Layout from "../layout"
 import { Link } from 'gatsby'
 import plus from "../../images/bx-plus.png"
+const uuidv4 = require('uuid/v4');
 const CatalogProduct = ({myPost, searchTerm}) => 
 {
   
@@ -41,12 +42,12 @@ return (
                       
                         // console.log(locat)
                       return(
-                        <div>
+                        <div key={uuidv4()}>
                           <Link 
                           style={{
                             padding: "0 10px"
                           }} 
-                          key={po.node.id} 
+                           
                           to={`${po.node.categories[1].path}${po.node.slug}`}
                      
                         >
@@ -54,6 +55,9 @@ return (
                           <div
                             className="catalog_item_container"
                             title="\u0413\u043E\u0440\u0442\u0435\u043D\u0437\u0438\u044F"
+                            style={{
+                             
+                            }}
                           >
                             <div
                               className="catalog_item"
@@ -63,15 +67,19 @@ return (
                               // }
                               style={{
                                 background:
-                                  `url(${po.node.acf.imgProdPost}) center center / cover no-repeat`
-                                  
+                                  `url(${po.node.acf.imgProdPost}) center center / cover no-repeat`,
+                                  position:"relative"
                               }}
                             >
-                              <div className="img-overlay">
+                              <div className="img-overlay"
+                              style={{
+                                // margin: "0 10px"
+                              }}>
                                 <div className="overlay_button">
                                   <img
                                     src={plus}
                                     alt="plus"
+                                    loading="lazy"
                                   />
                                 </div>
                               </div>
