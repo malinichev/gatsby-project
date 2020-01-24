@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{VRkk:function(e,n,t){"use strict";t.r(n),t.d(n,"query",(function(){return c}));var a=t("q1tI"),o=t.n(a),r=t("Bl7J"),c="441884474";n.default=function(e){e.data;var n=e.location;return o.a.createElement(r.a,{location:n},o.a.createElement("h1",null,"newsPostTemplate.js Template"))}}}]);
+//# sourceMappingURL=component---src-templates-post-templ-news-post-js-edf319376c6bca2f4500.js.map

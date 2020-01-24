@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{LDTl:function(t,a,e){"use strict";e.r(a);var n=e("q1tI"),l=e.n(n),o=e("Bl7J");a.default=function(t){var a=t.location;return l.a.createElement(o.a,{location:a},l.a.createElement("h1",null,"ContactTamplate.js Template"))}}}]);
+//# sourceMappingURL=component---src-templates-page-templ-contact-tamplate-js-6ef98832a20079d37f70.js.map

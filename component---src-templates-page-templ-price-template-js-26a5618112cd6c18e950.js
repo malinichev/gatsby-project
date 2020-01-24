@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{ETLI:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),c=t.n(a),l=t("Bl7J");n.default=function(e){var n=e.location;return c.a.createElement(l.a,{location:n},c.a.createElement("h1",null,"priceTemplate Template"))}}}]);
+//# sourceMappingURL=component---src-templates-page-templ-price-template-js-26a5618112cd6c18e950.js.map
