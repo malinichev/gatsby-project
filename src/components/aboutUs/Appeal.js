@@ -1,4 +1,7 @@
 import React from "react";
+import aphelRight from "../../images/aphel-right.svg";
+import aphelLeft from "../../images/aphel-left.svg";
+
 
 class Appeal extends React.Component {
   render() {
@@ -19,12 +22,12 @@ class Appeal extends React.Component {
         </div>
         <div className="m_container appeal_images">
           <img
-            src="http://maxdenrd.beget.tech/wp-content/themes/okt/assets/img/appeal_left_img.png"
+            src={aphelLeft}
             alt="3"
             loading="lazy"
           />
           <img
-            src="http://maxdenrd.beget.tech/wp-content/themes/okt/assets/img/appeal_right_img.png"
+            src={aphelRight}
             alt="2"
             loading="lazy"
           />

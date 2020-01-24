@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 // import Slider from "react-slick";
 import Swiper from 'react-id-swiper';
+import 'lazysizes';
+// import a plugin
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import {useSliderquery} from "../staticqueryslider"
 
 // import 'react-id-swiper/lib/styles/scss/swiper.scss'
+
 
 
 const params = {
@@ -27,7 +31,15 @@ export default () => {
   // });
 
   const { allWordpressWpMedia, wordpressPage } = useSliderquery()
-  
+  useEffect(() => {
+    // Обновляем заголовок документа с помощью API браузера
+    document.addEventListener('lazybeforeunveil', function(e){
+      var bg = e.target.getAttribute('data-bg');
+      if(bg){
+          e.target.style.backgroundImage = 'url(' + bg + ')';
+      }
+    });
+  });
   
   return (
           <div className="slider_content">
@@ -48,7 +60,9 @@ export default () => {
                         var file = slide.substring(slide.lastIndexOf('/')+1)
                         // console.log(slide)
                         return(
-                          <div className="" key={`Image${slide}`} 
+                          <div className="lazyload" 
+                          data-bg={slide}
+                          key={`Image${slide}`} 
                           style={{
                             backgroundImage: `url(${slide})`,
                             backgroundSize: "cover",

@@ -5,6 +5,7 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    siteUrl: 'http://a0213645.xsph.ru',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -33,7 +34,7 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         // I have created a dummy site for us to use with the plugins we discussed
-        baseUrl: "localhost:8888",
+        baseUrl: "a0213645.xsph.ru",
         protocol: "http",
         hostingWPCOM: false,
         // We will be using some advanced custom fields

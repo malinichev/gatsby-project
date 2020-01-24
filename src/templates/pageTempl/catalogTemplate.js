@@ -48,8 +48,10 @@ const CatalogORnewsSelect = ()=>{
      <InNewsPage cat={cat} myPost={myPost}  location={location} />  
        </>
  
-     );
+     )
      
+   }else{
+     return <span></span>
    }
 }//end CatalogORnewsSelect
 

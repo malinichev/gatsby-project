@@ -71,7 +71,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 // const pagesTemplate = path.resolve("./src/templates/pageTempl/page.js")
 allWordpressPage.edges.forEach(
   pages =>{
-    console.log(pages.node.slug)
+    // console.log(pages.node.slug)
     createPage({       
       path: pages.node.path,
       // Create indvidual .js file each page in wordpress
@@ -98,16 +98,18 @@ allWordpressPage.edges.forEach(
 
 
  allWordpressCategory.edges.forEach(cat => {
-    
+ 
         // console.log(cat.node.path)
-              createPage({
-                 path: `${cat.node.path}`,
-                 component: CategoryTemplate,
-                 context: {
-                     id: cat.node.id,
-                     catPath: cat.node.path
-                 },
-             })
+        createPage({
+          path: `${cat.node.path}`,
+          component: CategoryTemplate,
+          context: {
+              id: cat.node.id,
+              catPath: cat.node.path
+          },
+        })
+
+   
         
  
  })
