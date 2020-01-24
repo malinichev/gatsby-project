@@ -4,7 +4,7 @@ import GalleryOFphotos from "../../components/gallery/galleryOFphotos.js"
 import GalleryOFvideo from "../../components/gallery/galleryOFvideo.js"
 import { graphql } from 'gatsby'
 const GalleryTemplate = ({location, data}) => {
-  // console.log(data)
+  
   return(
   
         <Layout location={location}>
