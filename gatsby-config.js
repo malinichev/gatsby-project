@@ -5,7 +5,7 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: 'http://a0213645.xsph.ru',
+    siteUrl: 'https://eloquent-saha-c618d0.netlify.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -16,8 +16,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
+  
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -66,6 +65,8 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -1,6 +1,10 @@
 import { useStaticQuery, graphql } from "gatsby"
 export const useSliderquery = () => {
-  
+  // wordpressPage(slug: {eq: "about-us"}) {
+  //   acf {
+  //     slider1
+  //   }
+  // }
   const sliderr = useStaticQuery(
     graphql`
       query sliderAboutPageQuery {
@@ -14,9 +18,24 @@ export const useSliderquery = () => {
             }
           }
         }
+       
         wordpressPage(slug: {eq: "about-us"}) {
           acf {
-            slider1
+            slider11 {
+              imageslider {
+                headerTitle
+                img {
+                  localFile {
+                    url
+                    childImageSharp {
+                      fluid{
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
         allWordpressPost(filter: {categories: {elemMatch: {slug: {eq: "news"}}}}) {
