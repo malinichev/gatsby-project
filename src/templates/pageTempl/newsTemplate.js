@@ -11,29 +11,5 @@ return (
   </Layout>
 )
 }
-export const query = graphql`
-  query NewsQuery($slug: String) {
-    allWordpressPost(filter: {categories: {elemMatch: {slug: {eq: $slug}}}}) {
-      edges {
-        node {
-          acf {
-            descriptPost
-            fullDescriptPost
-            imgDescriptPost {
-              source_url
-              title
-            }
-          }
-          date(formatString: "DD.MM.YYYY")
-          wordpress_id
-          title
-          slug
-          categories {
-            slug
-          }
-        }
-      }
-    }
-  }
-`
+
 export default NewsTemplate

@@ -1,7 +1,7 @@
 
 import React, { useState }  from "react"
 // import Layout from "../layout"
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import NewsPageBradcrumb from "./NewsPageBradcrumb"
 import InNewsPageCategoriesList from "./InNewsPageCategoriesList"
 import InNewsPageNewsCatalog from "./InNewsPageNewsCatalog"
