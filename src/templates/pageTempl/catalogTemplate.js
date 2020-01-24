@@ -1,7 +1,7 @@
 import React, { useState }  from "react"
 import Layout from "../../components/layout"
 import InCatalogPage from "../../components/catalogPage/inCatalogPage"
-import InNewsPage from "../../components/newsPage/InNewsPage"
+import InNewsPage from "../../components/newsPage/inNewsPage"
 import { graphql, Link } from 'gatsby'
 
 const CatalogTemplate = ({location, data}) => {
@@ -11,21 +11,6 @@ const CatalogTemplate = ({location, data}) => {
   
   const [myPost, setmyPost] = useState(posts);
   const [inCatalog, setinCatalog] = useState(false);
-  
-
- 
-  
-
-  
-
-  
-  
-        
-  
-  
-  
-
-  
   
 
 
