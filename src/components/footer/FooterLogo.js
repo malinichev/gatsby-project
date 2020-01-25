@@ -9,6 +9,7 @@ class FooterLogo extends React.Component {
           <img
             src={logo}
             alt="logo"
+            loading="lazy" 
             style={{
               width: "227px",
               height: "80px"
