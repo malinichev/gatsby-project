@@ -9,7 +9,7 @@
 </h1>
 
 
-_Мой Gatsby проект => https://w-s.design , развернут на https://app.netlify.com, </br> 
+_Мой Gatsby проект => ***https://w-s.design*** , развернут на https://app.netlify.com, </br> 
 Данные подтягивает с headless wordpress api_
 
 Через админку можно создавать страницы и редактировать содержимое
